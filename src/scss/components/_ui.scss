@@ -1,0 +1,261 @@
+@import "../vars";
+
+.primary-btn {
+  padding: 20px 48px;
+
+  background-color: $main-purple;
+  border: 2px solid $main-purple;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  color: $light-color;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.primary-btn:hover {
+  background-color: $light-purple;
+  border-color: $light-purple;
+}
+
+.primary-btn:focus-visible {
+  outline: none;
+  background-color: $light-purple;
+  border-color: $dark-purple;
+}
+
+.primary-btn:active {
+  background-color: $dark-purple;
+  border-color: $dark-purple;
+}
+
+.primary-btn:disabled {
+  background-color: $light-grey;
+  border-color: $light-grey;
+  color: $dark-grey;
+}
+
+.secondary-btn {
+  padding: 17px 33px;
+
+  border: 2px solid $main-purple;
+  border-radius: 10px;
+  background-color: transparent;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  color: $main-purple;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.secondary-btn:hover {
+  background-color: $main-purple;
+  border-color: $main-purple;
+  color: $light-color;
+}
+
+.secondary-btn:focus-visible {
+  outline: none;
+  background-color: $light-purple;
+  border-color: $main-purple;
+  color: $light-color;
+}
+
+.secondary-btn:active {
+  background-color: $dark-purple;
+  border-color: $dark-purple;
+  color: $light-color;
+}
+
+.secondary-btn:disabled {
+  background-color: $light-grey;
+  border-color: $light-grey;
+  color: $dark-grey;
+}
+
+.primary-nav {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $dark-grey;
+  transition: all .2s ease;
+}
+
+.primary-nav span {
+  position: relative;
+  z-index: 100;
+}
+
+.primary-nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -8px;
+  right: -8px;
+  z-index: 10;
+  background-color: #EBD1FF;
+  content: '';
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.primary-nav:hover {
+  color: $main-purple;
+}
+
+.primary-nav:focus-visible {
+  outline: none;
+  color: $dark-purple;
+}
+
+.primary-nav:focus-visible::before {
+  opacity: 1;
+}
+
+.primary-nav:active {
+  color: $dark-purple;
+}
+
+.secondary-nav {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $dark-color;
+  transition: all .2s ease;
+}
+
+.secondary-nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -8px;
+  right: -8px;
+  z-index: -1;
+  background-color: #EBD1FF;
+  content: '';
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.secondary-nav:hover {
+  color: $main-purple;
+}
+
+.secondary-nav:focus-visible {
+  outline: none;
+  color: $dark-purple;
+}
+
+.secondary-nav:focus-visible::before {
+  opacity: 1;
+}
+
+.secondary-nav:active {
+  color: $dark-purple;
+}
+
+.phone {
+  position: relative;
+  padding-left: 22px;
+  color: $main-orange;
+  z-index: 10;
+  transition: all .2s ease;
+}
+
+.phone span,
+.phone svg {
+  position: relative;
+  z-index: 100;
+}
+
+.phone::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #FFF5D1;
+  content: '';
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.phone svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.phone:hover {
+  color: $light-orange;
+}
+
+.phone:focus-visible {
+  outline: none;
+  color: $main-orange;
+}
+
+.phone:focus-visible::before {
+  opacity: 1;
+}
+
+.phone:active {
+  color: $dark-orange;
+}
+
+.search {
+  padding: 18px 53px 18px 59px;
+
+  max-width: 761px;
+  width: 100%;
+
+  color: $dark-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+
+  background-color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  border-radius: 10px 0 0 10px;
+
+  transition: all .2s ease;
+}
+
+.search::placeholder {
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.search:hover {
+  border-color: #eaeaea;
+  background-color: #eaeaea;
+}
+
+.search:focus-visible {
+  outline: none;
+  background-color: #F8EFFF;
+  border-color: $main-purple;
+}
+
+.search:active {
+  border-color: #f6f6f6;
+  background-color: #f6f6f6;
+}
+
+.search:not(:placeholder-shown)+svg {
+  color: $main-purple;
+}
+
+.logo:focus-visible {
+  outline: 1px solid $main-purple;
+}
