@@ -1,0 +1,45 @@
+@import '../fonts';
+
+.banner {
+  padding: 80px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sale-banner {
+  background-image: url('../../img/banner-1.png');
+}
+
+.offer-banner {
+  padding: 150px 0;
+  background-image: url('../../img/banner-2.png');
+}
+
+.sale-banner__text {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 135%;
+  color: #999;
+  max-width: 496px;
+}
+
+.offer-banner__text {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $light-color;
+  max-width: 508px;
+}
+
+.offer-banner__text span {
+  font-family: 'PlayfairDisplay';
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #d4b986;
+}
