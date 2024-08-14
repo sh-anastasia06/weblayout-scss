@@ -6,8 +6,10 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/footer";
 @import "./components/ui";
-@import "./components/banner";
+@import "./components/cards";
+@import "./components/form";
 
 * {
   box-sizing: border-box;
@@ -22,5 +24,92 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  padding-left: 36px;
+  padding-right: 36px;
+  max-width: 1316px;
+}
+
+.banner {
+  padding: 80px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sale-banner {
+  background-image: url('../img/banner-1.png');
+}
+
+.offer-banner {
+  padding: 150px 0;
+  background-image: url('../img/banner-2.png');
+}
+
+.high-rating__rating::before {
+  background-image: url('../img/svg/rating.svg');
+}
+
+.sale-banner__text {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 135%;
+  color: #999;
+  max-width: 496px;
+}
+
+.offer-banner__text {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $light-color;
+  max-width: 508px;
+}
+
+.offer-banner__text span {
+  font-family: 'PlayfairDisplay';
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 120%;
+  color: #d4b986;
+}
+
+.card-large {
+  background-image: url('../img/offer2-bg.png');
+}
+
+.section-title {
+  margin: 0;
+  font-size: 32px;
+  margin-bottom: 26px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $dark-color;
+}
+
+.form__title {
+  margin-bottom: 9px;
+}
+
+.useful__card:first-of-type {
+  .card__image-wrap {
+    background-image: url('../img/useful1.png');
+  }
+}
+
+.useful__card:last-of-type {
+  .card__image-wrap {
+    background-image: url('../img/useful2.png');
+  }
+}
+
+.custom-checkbox::after {
+  background-image: url('../img/svg/checkbox.svg');
+}
+
+.feedback__img {
+  background-image: url('../img/svg/form.svg');
 }

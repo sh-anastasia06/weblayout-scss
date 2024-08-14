@@ -2,11 +2,9 @@
 
 .primary-btn {
   padding: 20px 48px;
-
   background-color: $main-purple;
   border: 2px solid $main-purple;
   border-radius: 10px;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 100%;
@@ -39,11 +37,9 @@
 
 .secondary-btn {
   padding: 17px 33px;
-
   border: 2px solid $main-purple;
   border-radius: 10px;
   background-color: transparent;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 100%;
@@ -75,6 +71,82 @@
   background-color: $light-grey;
   border-color: $light-grey;
   color: $dark-grey;
+}
+
+.link-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding-right: 27px;
+
+  position: relative;
+  color: $main-purple;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: underline 2px transparent;
+  transition: all .2s ease;
+}
+
+.link-btn__arrow {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid $main-purple;
+  transition: all .2s ease;
+
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $main-purple;
+    transition: all .2s ease;
+  }
+}
+
+.link-btn:hover {
+  text-decoration-color: $main-purple;
+
+  .link-btn__arrow {
+    background-color: $main-purple;
+
+    svg {
+      color: $light-color;
+    }
+  }
+}
+
+.link-btn:focus-visible {
+  outline: none;
+  text-decoration-color: $main-purple;
+
+  .link-btn__arrow {
+    background-color: $light-purple;
+
+    svg {
+      color: $light-color;
+    }
+  }
+}
+
+.link-btn:active {
+  color: $dark-purple;
+  text-decoration-color: $dark-purple;
+
+  .link-btn__arrow {
+    border-color: $dark-purple;
+    background-color: $dark-purple;
+
+    svg {
+      color: $light-color;
+    }
+  }
 }
 
 .primary-nav {
@@ -181,8 +253,8 @@
   top: 0;
   bottom: 0;
   z-index: 2;
-  background-color: #FFF5D1;
   content: '';
+  background-color: #FFF5D1;
   opacity: 0;
   transition: all .2s ease;
 }
@@ -258,4 +330,88 @@
 
 .logo:focus-visible {
   outline: 1px solid $main-purple;
+}
+
+.input {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  font-size: 16px;
+  line-height: 250%;
+  font-weight: 400;
+  color: $dark-color;
+  transition: all .2s ease;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 250%;
+  font-weight: 400;
+  color: $dark-grey;
+}
+
+.input:hover {
+  outline: none;
+  background-color: #eaeaea;
+}
+
+.input:focus-visible {
+  outline: 1px solid $main-purple;
+  background-color: #F8EFFF;
+}
+
+.input:not(:placeholder-shown) {
+  outline: 1px solid #B8EC64;
+}
+
+.custom-checkbox {
+  appearance: none;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 1px;
+  border: 1px solid #999;
+  transition: all .2s ease;
+}
+
+.custom-checkbox::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  content: '';
+  transition: all .2s ease;
+}
+
+.custom-checkbox:checked {
+  border-color: $main-purple;
+  background-color: $main-purple;
+}
+
+.custom-checkbox:checked::after {
+  opacity: 1;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  color: $dark-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.link {
+  color: $main-purple;
+  text-decoration: underline;
+}
+
+.secondary-link {
+  color: $dark-grey;
 }

@@ -9,12 +9,6 @@ const sass = gulpSass(dartSass);
 
 export const stylesBackend = () => {
   return app.gulp.src(app.paths.srcScss)
-    .pipe(plumber(
-      notify.onError({
-        title: "SCSS",
-        message: "Error: <%= error.message %>"
-      })
-    ))
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false,
