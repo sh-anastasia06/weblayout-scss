@@ -155,10 +155,16 @@
   font-weight: 400;
   line-height: 100%;
   color: $dark-grey;
+  height: fit-content;
   transition: all .2s ease;
 }
 
 .primary-nav span {
+  position: relative;
+  z-index: 100;
+}
+
+.primary-nav svg {
   position: relative;
   z-index: 100;
 }
@@ -183,6 +189,10 @@
 .primary-nav:focus-visible {
   outline: none;
   color: $dark-purple;
+
+  svg {
+    color: $light-color;
+  }
 }
 
 .primary-nav:focus-visible::before {
@@ -191,6 +201,21 @@
 
 .primary-nav:active {
   color: $dark-purple;
+}
+
+.footer__social {
+  .primary-nav {
+    display: inline-block;
+    height: fit-content;
+  }
+
+  .primary-nav::before {
+    top: -3px;
+    bottom: -3px;
+    right: -3px;
+    left: -3px;
+    background-color: $light-purple;
+  }
 }
 
 .secondary-nav {
@@ -370,7 +395,7 @@
   position: relative;
   width: 14px;
   height: 14px;
-  border-radius: 1px;
+  border-radius: 3px;
   border: 1px solid #999;
   transition: all .2s ease;
 }
@@ -410,8 +435,60 @@
 .link {
   color: $main-purple;
   text-decoration: underline;
+  transition: all .2s ease;
+}
+
+.link:focus-visible {
+  outline: none;
+  opacity: 0.7;
 }
 
 .secondary-link {
   color: $dark-grey;
+}
+
+.custom-radio input[type="radio"] {
+  appearance: none;
+  z-index: 10;
+}
+
+.custom-radio {
+  display: block;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid $main-purple;
+  border-radius: 10px;
+  color: $main-purple;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 200%;
+}
+
+.custom-radio:has(input[type="radio"]:checked) {
+  border-color: $dark-purple;
+  background-color: $dark-purple;
+  color: $light-color;
+}
+
+.custom-radio:hover {
+  background-color: $main-purple;
+  color: $light-color;
+}
+
+
+.custom-radio:has(input:focus-visible) {
+  background-color: $light-purple;
+  outline: none;
+}
+
+.custom-radio:has(input[type="radio"]:checked:focus-visible) {
+  background-color: $light-purple;
+  outline: none;
+}
+
+.custom-radio:active {
+  border-color: $dark-purple;
+  background-color: $dark-purple;
+  color: $light-color;
 }

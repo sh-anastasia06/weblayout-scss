@@ -10,6 +10,7 @@
 @import "./components/ui";
 @import "./components/cards";
 @import "./components/form";
+@import "./components/catalogue";
 
 * {
   box-sizing: border-box;
@@ -76,6 +77,34 @@ body {
   line-height: 120%;
   color: #d4b986;
 }
+
+.offer-banner-s {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-height: 360px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url('../img/banner-2-s.png');
+  background-position: top center;
+  background-size: 100% 53%;
+  background-color: $dark-color;
+
+  .offer-banner__text {
+    margin-bottom: 12px;
+    max-width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+  }
+
+  .offer-banner__text span {
+    font-size: 24px;
+  }
+}
+
 
 .card-large {
   background-image: url('../img/offer2-bg.png');

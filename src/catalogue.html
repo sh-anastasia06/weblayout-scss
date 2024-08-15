@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+
+  @include('partials/header.html')
+
+  <main>
+    <section class="catalogue">
+      <div class="catalogue__container container">
+        <aside class="catalogue__aside">
+          <div class="catalogue__filter filter">
+            <h3 class="filter__title">Фильтровать по:</h3>
+            <div class="filter__option-wrap">
+              <h4 class="filter__mini-title">Цвет</h4>
+              <div class="filter__options">
+                <label class="filter__label label" for="brown">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="brown">
+                  Коричневый
+                </label>
+                <label class="filter__label label" for="black">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="black" checked>
+                  Черный
+                </label>
+                <label class="filter__label label" for="blue">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="blue">
+                  Синий
+                </label>
+                <label class="filter__label label" for="white">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="white">
+                  Белый
+                </label>
+              </div>
+            </div>
+            <div class="filter__option-wrap">
+              <h4 class="filter__mini-title">Категория</h4>
+              <div class="filter__options">
+                <label class="filter__label label" for="sofas">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="sofas" checked>
+                  Диваны
+                </label>
+                <label class="filter__label label" for="armchairs">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="armchairs">
+                  Кресла
+                </label>
+              </div>
+            </div>
+            <div class="filter__option-wrap">
+              <h4 class="filter__mini-title">Цена</h4>
+              <div class="filter__options filter__options_price">
+                <label class="filter__label label">
+                  от
+                  <input class="filter__input" type="number" name="sofas" checked>
+                </label>
+                <label class="filter__label label">
+                  до
+                  <input class="filter__input" type="number" name="armchairs">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="catalogue__banner offer-banner offer-banner-s">
+            <p class="offer-banner__text"><span>Оксфорд 1950</br></span>
+              Новая коллекция изысканных кресел</p>
+            <button class="offer-banner-s__btn link-btn">В каталог <span class="link-btn__arrow"><svg width="7"
+                  height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span></button>
+          </div>
+        </aside>
+        <div class="catalogue__content">
+          <h2 class="catalogue__title section-title">Каталог</h2>
+          <div class="catalogue__wrap">
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">5,0</span>
+              <picture class="card__image">
+                <img src="./img/rating1.png" alt="Диван кожаный “R-94”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван кожаный “R-94”</h3>
+                <p class="card__price card__simple_price">94 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,9</span>
+              <picture class="card__image">
+                <img src="./img/rating2.png" alt="Диван апартековый “T-75”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван апартековый “T-75”</h3>
+                <p class="card__price card__simple_price">69 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,8</span>
+              <picture class="card__image">
+                <img src="./img/rating3.png" alt="Диван тканевый “D-31”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван тканевый “D-31”</h3>
+                <p class="card__price card__simple_price">28 490 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,8</span>
+              <picture class="card__image">
+                <img src="./img/rating4.png" alt="Диван велюровый “Y-68”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван велюровый “Y-68”</h3>
+                <p class="card__price card__simple_price">22 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,8</span>
+              <picture class="card__image">
+                <img src="./img/rating5.png" alt="Диван из шинила “W-95”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван из шинила “W-95”</h3>
+                <p class="card__price card__simple_price">22 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,8</span>
+              <picture class="card__image">
+                <img src="./img/rating6.png" alt="Диван флоковый “G-41”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван флоковый “G-41”</h3>
+                <p class="card__price card__simple_price">17 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,8</span>
+              <picture class="card__image">
+                <img src="./img/rating7.png" alt="Диван шиниловый “V-43”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван шиниловый “V-43”</h3>
+                <p class="card__price card__simple_price">19 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,7</span>
+              <picture class="card__image">
+                <img src="./img/rating8.png" alt="Диван велюровый “S-99”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван велюровый “S-99”</h3>
+                <p class="card__price card__simple_price">19 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+            <article class="high-rating__card card card-small">
+              <span class="high-rating__rating">4,7</span>
+              <picture class="card__image">
+                <img src="./img/rating9.png" alt="Диван из кожзама “F-85”">
+              </picture>
+              <div class="card__content">
+                <h3 class="card__title">Диван из кожзама “F-85”</h3>
+                <p class="card__price card__simple_price">26 990 руб</p>
+                <button class="card__btn secondary-btn">Купить</button>
+              </div>
+            </article>
+          </div>
+          <div class="catalogue__nav">
+            <label class="custom-radio">
+              <input type="radio" name="catalogue-page" class="catalogue__nav-item" value="1" checked>1
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="catalogue-page" class="catalogue__nav-item" value="2">2
+            </label>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/copyright.html')
+
+</body>
+
+</html>

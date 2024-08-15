@@ -44,6 +44,12 @@
   gap: 32px;
 }
 
+.catalogue__wrap {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 32px;
+}
+
 .card {
   position: relative;
   display: flex;
