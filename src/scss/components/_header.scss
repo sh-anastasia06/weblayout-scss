@@ -125,3 +125,24 @@
   color: $dark-grey;
   cursor: text;
 }
+
+.crumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+}
+
+.crumbs__item:not(:last-of-type)::after {
+  content: '/';
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $dark-grey;
+}
+
+.crumbs__item_active .primary-nav {
+  color: $dark-purple;
+}

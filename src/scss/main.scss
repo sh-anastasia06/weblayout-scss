@@ -11,6 +11,7 @@
 @import "./components/cards";
 @import "./components/form";
 @import "./components/catalogue";
+@import "./components/product";
 
 * {
   box-sizing: border-box;
@@ -46,7 +47,7 @@ body {
   background-image: url('../img/banner-2.png');
 }
 
-.high-rating__rating::before {
+.rating::before {
   background-image: url('../img/svg/rating.svg');
 }
 
@@ -119,6 +120,22 @@ body {
   color: $dark-color;
 }
 
+.section-title-mini {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: $dark-color;
+}
+
+.catalogue__title {
+  margin-bottom: 24px;
+}
+
+.product__title {
+  margin-bottom: 5px;
+}
+
 .form__title {
   margin-bottom: 9px;
 }
@@ -141,4 +158,16 @@ body {
 
 .feedback__img {
   background-image: url('../img/svg/form.svg');
+}
+
+.descr-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #999;
+}
+
+.product__descr {
+  margin-bottom: 21px;
 }

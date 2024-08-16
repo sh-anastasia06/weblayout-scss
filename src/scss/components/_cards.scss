@@ -112,6 +112,10 @@
     font-weight: 400;
     line-height: 136%;
   }
+
+  .card__btn {
+    display: inline-block;
+  }
 }
 
 .card-small {
@@ -212,10 +216,8 @@
   }
 }
 
-.high-rating__rating {
-  position: absolute;
-  top: 30px;
-  left: 30px;
+.rating {
+  position: relative;
   padding-left: 22px;
   font-size: 16px;
   font-weight: 400;
@@ -223,7 +225,13 @@
   color: $main-orange;
 }
 
-.high-rating__rating::before {
+.high-rating__rating {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.rating::before {
   position: absolute;
   left: 0;
   top: 50%;
