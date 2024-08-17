@@ -27,8 +27,8 @@ body {
 .container {
   margin: 0 auto;
   padding-left: 36px;
-  padding-right: 36px;
-  max-width: 1316px;
+  padding-right: 37px;
+  max-width: 1353px;
 }
 
 .banner {
@@ -43,8 +43,12 @@ body {
 }
 
 .offer-banner {
-  padding: 150px 0;
+  padding: 155px 0 149px;
   background-image: url('../img/banner-2.png');
+}
+
+.offer-banner__btn {
+  padding: 20px 35px;
 }
 
 .rating::before {
@@ -53,7 +57,8 @@ body {
 
 .sale-banner__text {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
+  letter-spacing: 2px;
   font-size: 48px;
   font-weight: 700;
   line-height: 135%;
@@ -67,6 +72,7 @@ body {
   font-size: 48px;
   font-weight: 400;
   line-height: 120%;
+  letter-spacing: 1px;
   color: $light-color;
   max-width: 508px;
 }
@@ -113,6 +119,7 @@ body {
 
 .section-title {
   margin: 0;
+  letter-spacing: 1px;
   font-size: 32px;
   margin-bottom: 26px;
   font-weight: 400;
@@ -140,18 +147,6 @@ body {
   margin-bottom: 9px;
 }
 
-.useful__card:first-of-type {
-  .card__image-wrap {
-    background-image: url('../img/useful1.png');
-  }
-}
-
-.useful__card:last-of-type {
-  .card__image-wrap {
-    background-image: url('../img/useful2.png');
-  }
-}
-
 .custom-checkbox::after {
   background-image: url('../img/svg/checkbox.svg');
 }
@@ -170,4 +165,34 @@ body {
 
 .product__descr {
   margin-bottom: 21px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .special-offers__wrap {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .card-large {
+    grid-column-start: span 3;
+    background-image: none;
+  }
+
+  .sale-banner__text {
+    margin-bottom: 43px;
+    font-size: 50px;
+    line-height: 137%;
+    max-width: 520px;
+  }
+
+  .sale-banner {
+    background-image: url('../img/banner-1-1024.png');
+  }
+
+  .offer-banner {
+    background-image: url('../img/banner-2-1024.png');
+  }
 }

@@ -2,7 +2,7 @@
 
 .primary-btn {
   display: inline-block;
-  padding: 20px 48px;
+  padding: 20px 50px;
   background-color: $main-purple;
   border: 2px solid $main-purple;
   border-radius: 10px;
@@ -38,7 +38,7 @@
 
 .secondary-btn {
   display: inline-block;
-  padding: 17px 33px;
+  padding: 17px 34px;
   border: 2px solid $main-purple;
   border-radius: 10px;
   background-color: transparent;
@@ -101,7 +101,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  padding-right: 27px;
+  padding-right: 32px;
 
   position: relative;
   color: $main-purple;
@@ -285,6 +285,9 @@
   position: relative;
   padding-left: 22px;
   color: $main-orange;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
   z-index: 10;
   transition: all .2s ease;
 }
@@ -335,7 +338,7 @@
 .search {
   padding: 18px 53px 18px 59px;
 
-  max-width: 761px;
+  max-width: 1061px;
   width: 100%;
 
   color: $dark-color;
