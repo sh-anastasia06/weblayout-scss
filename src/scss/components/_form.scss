@@ -80,3 +80,25 @@
     grid-column-start: span 2;
   }
 }
+
+@media (max-width: 650px) {
+  .feedback {
+    padding-bottom: 67px;
+  }
+
+  .feedback__img {
+    display: none;
+  }
+
+  .feedback__form {
+    grid-column-start: span 6;
+  }
+
+  .section-title.form__title {
+    margin-bottom: 8px;
+  }
+
+  .form__descr {
+    max-width: 290px;
+  }
+}

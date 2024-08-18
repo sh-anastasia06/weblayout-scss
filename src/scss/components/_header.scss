@@ -1,10 +1,18 @@
 @import "./ui";
 
+.header-l {
+  display: block;
+}
+
 .header-m {
   display: none;
 }
 
 .header-s {
+  display: none;
+}
+
+.header-mobile {
   display: none;
 }
 
@@ -187,6 +195,34 @@
   color: $dark-purple;
 }
 
+
+.logotype {
+  margin-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  background-color: #f6f6f6;
+}
+
+.header__logotype {
+  text-align: center;
+}
+
+.links {
+  margin-bottom: 6px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid #f6f6f6;
+  border-left: none;
+  border-right: none;
+}
+
+.links__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 @media (max-width: 1200px) {
   .header-l {
     display: none;
@@ -272,4 +308,30 @@
   .elements {
     padding-bottom: 33px;
   }
+}
+
+@media (max-width: 650px) {
+  .header-s {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .main {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .main__nav {
+    gap: 30px;
+    width: max-content;
+    overflow-x: hidden;
+  }
+
+  .main nav {
+    overflow: hidden;
+  }
+
 }

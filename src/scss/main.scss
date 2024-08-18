@@ -24,6 +24,10 @@ body {
   background-color: $light-color;
 }
 
+.categories-mobile {
+  display: none;
+}
+
 .container {
   margin: 0 auto;
   padding-left: 36px;
@@ -209,7 +213,9 @@ body {
   }
 
   .sale-banner__text {
+    padding-left: 18px;
     letter-spacing: normal;
+    max-width: 100%;
   }
 
   .offer-banner {
@@ -222,5 +228,67 @@ body {
 
   .feedback__img {
     background-image: url('../img/svg/form-s.svg');
+  }
+}
+
+@media (max-width: 650px) {
+  .section-title {
+    margin-bottom: 26px;
+    font-size: 24px;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .categories-mobile {
+    display: block;
+  }
+
+  .container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .sale-banner {
+    padding-top: 30px;
+    padding-bottom: 0;
+    min-height: 302px;
+    background-position: top center;
+    background-size: 100% 210px;
+    background-image: url('../img/banner-1-320.png');
+  }
+
+  .sale-banner__text {
+    margin-bottom: 155px;
+    font-size: 20px;
+    max-width: 220px;
+  }
+
+  .sale-banner__btn {
+    width: 296px;
+  }
+
+  .offer-banner {
+    padding-top: 30px;
+    padding-bottom: 0;
+    min-height: 302px;
+    background-position: top center;
+    background-size: 100% 210px;
+    background-image: url('../img/banner-2-320.png');
+  }
+
+  .offer-banner__text {
+    margin-bottom: 144px;
+    font-size: 16px;
+    max-width: 187px;
+  }
+
+  .offer-banner__text span {
+    font-size: 24px;
+  }
+
+  .offer-banner__btn {
+    width: 296px;
   }
 }
