@@ -70,3 +70,13 @@
     max-width: 383px;
   }
 }
+
+@media (max-width: 920px) {
+  .feedback__container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .feedback__img {
+    grid-column-start: span 2;
+  }
+}

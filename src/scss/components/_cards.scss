@@ -309,6 +309,10 @@
 }
 
 @media (max-width: 1200px) {
+  .special-offers__wrap {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
   .high-rating__wrap {
     grid-template-columns: repeat(9, 1fr);
   }
@@ -327,6 +331,18 @@
 
   .categories__card {
     min-height: 511px;
+
+    .card__title {
+      margin-bottom: 36px;
+    }
+
+    .card__image {
+      margin: 0;
+    }
+
+    .card__btn {
+      margin-top: auto;
+    }
   }
 
   .categories__card:not(:first-child) {
@@ -363,4 +379,34 @@
     }
   }
 
+}
+
+@media (max-width: 920px) {
+  .special-offers__wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .special-offers__card:nth-of-type(3) {
+    display: none;
+  }
+
+  .high-rating__wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .categories__wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .categories__card:nth-of-type(4) {
+    order: 1;
+  }
+
+  .useful__wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .useful__card:nth-of-type(3) {
+    display: none;
+  }
 }

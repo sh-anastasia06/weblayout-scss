@@ -90,3 +90,20 @@
     grid-column-start: span 7;
   }
 }
+
+@media (max-width: 920px) {
+  .footer__container {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 24px;
+  }
+
+  .footer__links {
+    grid-column-start: span 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__nav {
+    grid-column-start: span 6;
+  }
+}

@@ -172,10 +172,6 @@ body {
     max-width: 1024px;
   }
 
-  .special-offers__wrap {
-    grid-template-columns: repeat(9, 1fr);
-  }
-
   .card-large {
     grid-column-start: span 3;
     background-image: none;
@@ -194,5 +190,37 @@ body {
 
   .offer-banner {
     background-image: url('../img/banner-2-1024.png');
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    padding-right: 72px;
+    padding-left: 72px;
+    max-width: 768px;
+  }
+
+  .sale-banner {
+    background-image: url('../img/banner-1-768.png');
+  }
+
+  .sale-banner__container {
+    padding-left: 72px;
+  }
+
+  .sale-banner__text {
+    letter-spacing: normal;
+  }
+
+  .offer-banner {
+    background-image: url('../img/banner-2-768.png');
+  }
+
+  .offer-banner__container {
+    padding-left: 36px;
+  }
+
+  .feedback__img {
+    background-image: url('../img/svg/form-s.svg');
   }
 }

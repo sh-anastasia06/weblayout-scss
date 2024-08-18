@@ -4,6 +4,10 @@
   display: none;
 }
 
+.header-s {
+  display: none;
+}
+
 .header__phone {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -216,5 +220,56 @@
     .elements__search::after {
       right: 32px;
     }
+  }
+}
+
+@media (max-width: 920px) {
+  .header-m {
+    display: none;
+  }
+
+  .header-s {
+    display: block;
+
+    .main__container {
+      padding-left: 68px;
+      flex-wrap: wrap;
+      row-gap: 30px;
+    }
+
+    .main__container nav {
+      width: 100%;
+      order: 3;
+    }
+  }
+
+  .header__phone {
+    padding-top: 18px;
+    padding-bottom: 23px;
+  }
+
+  .additional {
+    padding-top: 18px;
+    padding-bottom: 13px;
+  }
+
+  .additional__nav {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main {
+    padding-bottom: 22px;
+  }
+
+  .main__nav {
+    gap: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .elements {
+    padding-bottom: 33px;
   }
 }
