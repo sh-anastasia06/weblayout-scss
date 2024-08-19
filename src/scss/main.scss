@@ -144,11 +144,16 @@ body {
 }
 
 .product__title {
+  padding-top: 7px;
   margin-bottom: 5px;
 }
 
 .form__title {
   margin-bottom: 9px;
+}
+
+.simmilar .section-title {
+  font-size: 24px;
 }
 
 .custom-checkbox::after {
@@ -168,7 +173,7 @@ body {
 }
 
 .product__descr {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1200px) {
