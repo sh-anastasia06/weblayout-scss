@@ -240,3 +240,92 @@
     padding-top: 0;
   }
 }
+
+@media (max-width: 650px) {
+  .crumbs {
+    display: none;
+  }
+
+  .product {
+    padding-top: 23px;
+  }
+
+  .product__img {
+    padding-bottom: 8px;
+    min-height: 116px;
+  }
+
+  .product__actions {
+    padding-top: 5px;
+    padding-bottom: 16px;
+    grid-column-start: span 6;
+  }
+
+  .product__container {
+    row-gap: 0;
+  }
+
+  .product__rating {
+    font-size: 16px;
+  }
+
+  .product__rating.rating::before {
+    width: 15px;
+    height: 15px;
+  }
+
+  .product__price {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+
+  .product__btn:first-of-type {
+    padding: 17px 68px;
+  }
+
+  .product__info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    grid-column-start: span 6;
+  }
+
+  .product__info:last-of-type {
+    padding-top: 12px;
+  }
+
+  .product__text {
+    max-width: 85%;
+    line-height: 185%;
+  }
+
+  .product__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__item:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .product__item-quality span {
+    display: none;
+  }
+
+  .product__item-quality {
+    line-height: 130%;
+    font-size: 10px;
+  }
+
+  .product__item-char {
+    line-height: 130%;
+  }
+
+  .simmilar {
+    padding-top: 22px;
+  }
+
+  .simmilar .high-rating__card .card__image {
+    margin: auto auto 8px;
+    transform: translateX(-8px);
+  }
+}
