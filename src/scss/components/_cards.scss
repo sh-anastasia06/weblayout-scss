@@ -451,7 +451,8 @@
     gap: 16px;
   }
 
-  .high-rating__card {
+  .high-rating__card,
+  .catalogue__card {
     padding: 16px;
     min-height: 278px;
     grid-column-start: span 3;
