@@ -11,6 +11,7 @@
   @include('partials/header2-mobile.html')
 
   <main>
+    <h1 class="visually-hidden">SitDownPls — магазин мебели</h1>
     <section class="catalogue">
       <div class="catalogue__container container">
         <h2 class="catalogue__title catalogue__title_m section-title-mini">Каталог</h2>
@@ -20,20 +21,20 @@
             <div class="filter__option-wrap">
               <h4 class="filter__mini-title">Цвет</h4>
               <div class="filter__options">
-                <label class="filter__label label" for="brown">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="brown">
+                <label class="filter__label label" for="brownColor">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="brown" id="brownColor">
                   Коричневый
                 </label>
-                <label class="filter__label label" for="black">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="black" checked>
+                <label class="filter__label label" for="blackColor">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="black" id="blackColor" checked>
                   Черный
                 </label>
-                <label class="filter__label label" for="blue">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="blue">
+                <label class="filter__label label" for="blueColor">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="blue" id="blueColor">
                   Синий
                 </label>
-                <label class="filter__label label" for="white">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="white">
+                <label class="filter__label label" for="whiteColor">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="white" id="whiteColor">
                   Белый
                 </label>
               </div>
@@ -42,11 +43,11 @@
               <h4 class="filter__mini-title">Категория</h4>
               <div class="filter__options">
                 <label class="filter__label label" for="sofas">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="sofas" checked>
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="sofas" id="sofas" checked>
                   Диваны
                 </label>
                 <label class="filter__label label" for="armchairs">
-                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="armchairs">
+                  <input class="filter__checkbox custom-checkbox" type="checkbox" name="armchairs" id="armchairs">
                   Кресла
                 </label>
               </div>
@@ -54,20 +55,22 @@
             <div class="filter__option-wrap">
               <h4 class="filter__mini-title">Цена</h4>
               <div class="filter__options filter__options_price">
-                <label class="filter__label label">
+                <label class="filter__label label" for="fromPrice">
                   от
-                  <input class="filter__input" type="number" name="sofas" checked>
+                  <input class="filter__input" type="number" name="fromPrice" id="fromPrice">
                 </label>
-                <label class="filter__label label">
+                <label class="filter__label label" for="toPrice">
                   до
-                  <input class="filter__input" type="number" name="armchairs">
+                  <input class="filter__input" type="number" name="toPrice" id="toPrice">
                 </label>
               </div>
             </div>
           </div>
           <div class="catalogue__banner offer-banner offer-banner-s">
-            <p class="offer-banner__text"><span>Оксфорд 1950</br></span>
-              Новая коллекция изысканных кресел</p>
+            <p class="offer-banner__text">
+              <span>Оксфорд 1950<br></span>
+              Новая коллекция изысканных кресел
+            </p>
             <button class="offer-banner-s__btn link-btn">В каталог <span class="link-btn__arrow"><svg width="7"
                   height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
@@ -86,7 +89,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван кожаный “R-94”</h3>
-                <p class="card__price card__simple_price">94 990 руб</p>
+                <p class="card__price card__simple-price">94 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -98,7 +101,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван апартековый “T-75”</h3>
-                <p class="card__price card__simple_price">69 990 руб</p>
+                <p class="card__price card__simple-price">69 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -110,7 +113,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван тканевый “D-31”</h3>
-                <p class="card__price card__simple_price">28 490 руб</p>
+                <p class="card__price card__simple-price">28 490 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -122,7 +125,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван велюровый “Y-68”</h3>
-                <p class="card__price card__simple_price">22 990 руб</p>
+                <p class="card__price card__simple-price">22 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -134,7 +137,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван из шинила “W-95”</h3>
-                <p class="card__price card__simple_price">22 990 руб</p>
+                <p class="card__price card__simple-price">22 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -146,7 +149,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван флоковый “G-41”</h3>
-                <p class="card__price card__simple_price">17 990 руб</p>
+                <p class="card__price card__simple-price">17 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -157,7 +160,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван шиниловый “V-43”</h3>
-                <p class="card__price card__simple_price">19 990 руб</p>
+                <p class="card__price card__simple-price">19 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -168,7 +171,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван велюровый “S-99”</h3>
-                <p class="card__price card__simple_price">19 990 руб</p>
+                <p class="card__price card__simple-price">19 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
@@ -179,7 +182,7 @@
               </picture>
               <div class="card__content">
                 <h3 class="card__title">Диван из кожзама “F-85”</h3>
-                <p class="card__price card__simple_price">26 990 руб</p>
+                <p class="card__price card__simple-price">26 990 руб</p>
                 <a href="product.html" class="card__btn secondary-btn">Купить</a>
               </div>
             </article>
