@@ -223,6 +223,8 @@
 
 }
 
+
+
 @media (max-width: 1200px) {
   .header-l {
     display: none;
@@ -230,6 +232,10 @@
 
   .header-m {
     display: block;
+  }
+
+  .header-catalogue .elements {
+    padding-bottom: 22px;
   }
 
   .additional {

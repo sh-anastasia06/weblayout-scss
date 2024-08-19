@@ -127,7 +127,8 @@
   }
 }
 
-.high-rating__card.card-small .card__image {
+.high-rating__card.card-small .card__image,
+.catalogue__card.card-small .card__image {
   max-width: 110%;
   width: 110%;
 }
@@ -179,7 +180,8 @@
   }
 }
 
-.high-rating__card {
+.high-rating__card,
+.catalogue__card {
   min-height: 420px;
 
   .card__title {
@@ -231,7 +233,7 @@
   color: $main-orange;
 }
 
-.high-rating__rating {
+.rating {
   position: absolute;
   top: 30px;
   left: 30px;
