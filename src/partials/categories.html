@@ -1,88 +1,98 @@
 <section class="categories">
   <div class="container categories__container">
     <h2 class="section-title categories__title">Топ категории</h2>
-    <div class="categories__wrap">
-      <article class="categories__card card card-xl">
-        <ul class="categories__list">
-          <li class="categories__item">Прямые</li>
-          <li class="categories__item">Угловые</li>
-          <li class="categories__item">Модульные</li>
-        </ul>
-        <h3 class="card__title">Диваны</h3>
-        <picture class="card__image">
-          <source media="(max-width: 1200px)" srcset="./img/top1-1024.png">
-          <img src="./img/top1.png" alt="Диваны">
-        </picture>
-        <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
-              height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg></span></button>
-      </article>
-      <article class="categories__card card card-xl">
-        <ul class="categories__list">
-          <li class="categories__item">Мягкие</li>
-          <li class="categories__item">Кресла-кровати</li>
-        </ul>
-        <h3 class="card__title">Кресла</h3>
-        <picture class="card__image">
-          <source media="(max-width: 1200px)" srcset="./img/top2-1024.png">
-          <img src="./img/top2.png" alt="Кресла">
-        </picture>
-        <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
-              height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg></span></button>
-      </article>
-      <article class="categories__card card card-m">
-        <ul class="categories__list">
-          <li class="categories__item">Односпальные</li>
-          <li class="categories__item">Двуспальные</li>
-        </ul>
-        <h3 class="card__title">Кровати</h3>
-        <picture class="card__image">
-          <source media="(max-width: 1200px)" srcset="./img/top3-1024.png">
-          <img src="./img/top3.png" alt="Кровати">
-        </picture>
-        <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
-              height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg></span></button>
-      </article>
-      <article class="categories__card card card-m">
-        <ul class="categories__list">
-          <li class="categories__item">Тумбы</li>
-          <li class="categories__item">Комоды</li>
-        </ul>
-        <h3 class="card__title">Тумбы и комоды</h3>
-        <picture class="card__image">
-          <source media="(max-width: 1200px)" srcset="./img/top4-1024.png">
-          <img src="./img/top4.png" alt="Тумбы и комоды">
-        </picture>
-        <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
-              height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg></span></button>
-      </article>
-      <article class="categories__card card card-m">
-        <ul class="categories__list">
-          <li class="categories__item">Деревянные</li>
-          <li class="categories__item">Металлокаркас</li>
-        </ul>
-        <h3 class="card__title">Стулья</h3>
-        <picture class="card__image">
-          <source media="(max-width: 1200px)" srcset="./img/top5-1024.png">
-          <img src="./img/top5.png" alt="Стулья">
-        </picture>
-        <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
-              height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-            </svg></span></button>
-      </article>
-    </div>
+    <ul class="categories__wrap">
+      <li class="categories__card card card_xl">
+        <article class="card__innner">
+          <ul class="categories__list">
+            <li class="categories__item">Прямые</li>
+            <li class="categories__item">Угловые</li>
+            <li class="categories__item">Модульные</li>
+          </ul>
+          <h3 class="card__title">Диваны</h3>
+          <picture class="card__image">
+            <source media="(max-width: 1200px)" srcset="./img/top1-1024.png">
+            <img src="./img/top1.png" aria-hidden="true" alt="">
+          </picture>
+          <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
+                height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></span></button>
+        </article>
+      </li>
+      <li class="categories__card card card_xl">
+        <article class="card__innner">
+          <ul class="categories__list">
+            <li class="categories__item">Мягкие</li>
+            <li class="categories__item">Кресла-кровати</li>
+          </ul>
+          <h3 class="card__title">Кресла</h3>
+          <picture class="card__image">
+            <source media="(max-width: 1200px)" srcset="./img/top2-1024.png">
+            <img src="./img/top2.png" aria-hidden="true" alt="">
+          </picture>
+          <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
+                height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></span></button>
+        </article>
+      </li>
+      <li class="categories__card card card_m">
+        <article class="card__innner">
+          <ul class="categories__list">
+            <li class="categories__item">Односпальные</li>
+            <li class="categories__item">Двуспальные</li>
+          </ul>
+          <h3 class="card__title">Кровати</h3>
+          <picture class="card__image">
+            <source media="(max-width: 1200px)" srcset="./img/top3-1024.png">
+            <img src="./img/top3.png" aria-hidden="true" alt="">
+          </picture>
+          <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
+                height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></span></button>
+        </article>
+      </li>
+      <li class="categories__card card card_m">
+        <article class="card__innner">
+          <ul class="categories__list">
+            <li class="categories__item">Тумбы</li>
+            <li class="categories__item">Комоды</li>
+          </ul>
+          <h3 class="card__title">Тумбы и комоды</h3>
+          <picture class="card__image">
+            <source media="(max-width: 1200px)" srcset="./img/top4-1024.png">
+            <img src="./img/top4.png" aria-hidden="true" alt="">
+          </picture>
+          <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
+                height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></span></button>
+        </article>
+      </li>
+      <li class="categories__card card card_m">
+        <article class="card__innner">
+          <ul class="categories__list">
+            <li class="categories__item">Деревянные</li>
+            <li class="categories__item">Металлокаркас</li>
+          </ul>
+          <h3 class="card__title">Стулья</h3>
+          <picture class="card__image">
+            <source media="(max-width: 1200px)" srcset="./img/top5-1024.png">
+            <img src="./img/top5.png" aria-hidden="true" alt="">
+          </picture>
+          <button class="card__btn link-btn"><span>В каталог</span> <span class="link-btn__arrow"><svg width="7"
+                height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.625 1.5625L5.0625 5L1.625 8.4375" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg></span></button>
+        </article>
+      </li>
+    </ul>
   </div>
 </section>

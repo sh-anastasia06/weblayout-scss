@@ -37,7 +37,6 @@
 }
 
 .secondary-btn {
-  display: inline-block;
   padding: 17px 34px;
   border: 2px solid $main-purple;
   border-radius: 10px;
@@ -174,6 +173,7 @@
 }
 
 .primary-nav {
+  display: block;
   position: relative;
   font-size: 14px;
   font-weight: 400;
@@ -181,6 +181,11 @@
   color: $dark-grey;
   height: fit-content;
   transition: all .2s ease;
+  max-height: 30px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .primary-nav span {
@@ -242,13 +247,26 @@
   }
 }
 
+.secondary-nav span,
+.primary-nav span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .secondary-nav {
+  display: block;
   position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
   color: $dark-color;
   transition: all .2s ease;
+  max-height: 30px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .secondary-nav::before {

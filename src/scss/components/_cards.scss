@@ -6,6 +6,9 @@
 }
 
 .special-offers__wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -17,6 +20,9 @@
 }
 
 .high-rating__wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -28,6 +34,9 @@
 }
 
 .categories__wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -39,6 +48,9 @@
 }
 
 .useful__wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -52,15 +64,14 @@
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   padding: 30px 30px;
   background-color: #f6f6f6;
   border-radius: 10px;
 
   .card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     align-self: flex-start;
     justify-self: flex-end;
   }
@@ -114,11 +125,20 @@
   }
 
   .card__btn {
-    display: inline-block;
+    max-width: 128px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
-.card-small {
+.card__innner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.card_small {
   grid-column-start: span 3;
 
   .card__image {
@@ -127,13 +147,13 @@
   }
 }
 
-.high-rating__card.card-small .card__image,
-.catalogue__card.card-small .card__image {
+.high-rating__card.card_small .card__image,
+.catalogue__card.card_small .card__image {
   max-width: 110%;
   width: 110%;
 }
 
-.card-m {
+.card_m {
   grid-column-start: span 4;
 
   .card__image {
@@ -142,7 +162,7 @@
   }
 }
 
-.card-large {
+.card_large {
   grid-column-start: span 6;
   background-repeat: no-repeat;
   background-position: bottom 30px right 30px;
@@ -154,7 +174,7 @@
   }
 }
 
-.card-xl {
+.card_xl {
   grid-column-start: span 6;
 
   .card__image {
@@ -173,6 +193,9 @@
   .card__title {
     margin-bottom: 23px;
     letter-spacing: 1px;
+    max-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .card__prices {
@@ -213,12 +236,13 @@
   }
 
   .sale-el {
+    display: inline-block;
     position: absolute;
-    right: -10px;
+    right: -9px;
     top: 0;
     width: 0;
     height: 0;
-    border-left: 10px solid $main-orange;
+    border-left: 9px solid $main-orange;
     border-top: 17px solid transparent;
     border-bottom: 16px solid transparent;
   }
@@ -289,6 +313,11 @@
   min-height: 676px;
 }
 
+.useful__card .card__image-wrap img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .useful__card:nth-of-type(3),
 .useful__card:nth-of-type(4),
 .useful__card:nth-of-type(5) {
@@ -316,6 +345,16 @@
 .special-offers__card:nth-of-type(5),
 .special-offers__card:nth-of-type(6) {
   display: none;
+}
+
+.categories__card {
+  .card__innner {
+    align-items: flex-start;
+  }
+
+  .card__btn {
+    height: 22px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -364,10 +403,6 @@
     order: 1;
   }
 
-  .categories__card .card__image {
-    width: calc(100% + 60px)
-  }
-
   .useful__wrap {
     grid-template-columns: repeat(9, 1fr);
   }
@@ -381,6 +416,7 @@
     grid-column-start: span 3;
 
     .card__descr {
+      margin-bottom: 10px;
       font-size: 16px;
     }
 
@@ -447,7 +483,7 @@
     }
   }
 
-  .card-large {
+  .card_large {
     grid-column-start: span 6;
   }
 
@@ -507,6 +543,8 @@
   .categories__wrap {
     gap: 32px 16px;
   }
+
+
 
   .categories__card:not(:first-of-type) {
     padding: 16px 16px 10px;
@@ -584,5 +622,9 @@
   .useful__card:nth-of-type(4),
   .useful__card:nth-of-type(5) {
     display: flex;
+  }
+
+  .card__image {
+    max-width: 100%;
   }
 }

@@ -64,6 +64,7 @@ body {
 
 .offer-banner__btn {
   padding: 20px 35px;
+  max-width: 187px;
 }
 
 .rating::before {
@@ -81,7 +82,11 @@ body {
   max-width: 496px;
 }
 
-.offer-banner__text {
+.sale-banner__btn {
+  max-width: 187px;
+}
+
+.offer-banner__title {
   margin: 0;
   margin-bottom: 49px;
   font-size: 48px;
@@ -92,7 +97,7 @@ body {
   max-width: 508px;
 }
 
-.offer-banner__text span {
+.offer-banner__name {
   font-family: 'PlayfairDisplay';
   font-size: 60px;
   font-weight: 900;
@@ -114,7 +119,7 @@ body {
   background-size: 100% 53%;
   background-color: $dark-color;
 
-  .offer-banner__text {
+  .offer-banner__title {
     margin-bottom: 12px;
     max-width: 200px;
     font-size: 16px;
@@ -122,13 +127,13 @@ body {
     color: #999;
   }
 
-  .offer-banner__text span {
+  .offer-banner__name {
     font-size: 24px;
   }
 }
 
 
-.card-large {
+.card_large {
   background-image: url('../img/offer2-bg.png');
 }
 
@@ -171,7 +176,7 @@ body {
   background-image: url('../img/svg/checkbox.svg');
 }
 
-.feedback__img {
+.feedback__container::after {
   background-image: url('../img/svg/form.svg');
 }
 
@@ -192,7 +197,7 @@ body {
     max-width: 1024px;
   }
 
-  .card-large {
+  .card_large {
     grid-column-start: span 3;
     background-image: none;
   }
@@ -242,7 +247,7 @@ body {
     padding-left: 36px;
   }
 
-  .feedback__img {
+  .feedback__container::after {
     background-image: url('../img/svg/form-s.svg');
   }
 }
@@ -294,13 +299,13 @@ body {
     background-image: url('../img/banner-2-320.png');
   }
 
-  .offer-banner__text {
+  .offer-banner__title {
     margin-bottom: 144px;
     font-size: 16px;
     max-width: 187px;
   }
 
-  .offer-banner__text span {
+  .offer-banner__name {
     font-size: 24px;
   }
 
