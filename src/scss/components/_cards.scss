@@ -480,6 +480,7 @@
 
     .card__image {
       margin: auto auto 16px;
+
     }
   }
 
@@ -529,7 +530,8 @@
 
   .special-offers__card {
     .card__image {
-      max-width: 100%;
+      height: max-content;
+      max-width: max-content;
     }
   }
 
@@ -567,6 +569,7 @@
     }
 
     .card__image {
+      width: max-content;
       transform: translateX(-16px);
     }
   }
@@ -606,6 +609,10 @@
 
     .categories__list {
       margin-bottom: 14px;
+    }
+
+    .card__image {
+      width: max-content;
     }
   }
 

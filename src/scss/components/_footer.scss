@@ -38,17 +38,13 @@
   grid-column: span 8;
 }
 
-.footer__nav-title {
+.footer__nav-title a {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 100%;
   color: $dark-color;
-}
-
-.footer__nav-title a {
-  color: inherit;
 }
 
 .footer__list {
