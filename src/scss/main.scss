@@ -79,10 +79,10 @@ body {
   font-weight: 700;
   line-height: 135%;
   color: #999;
-  max-width: 496px;
 }
 
-.sale-banner__text span {
+.sale-banner__text span,
+.offer-banner__title span {
   display: block;
 }
 
@@ -98,7 +98,6 @@ body {
   line-height: 120%;
   letter-spacing: 1px;
   color: $light-color;
-  max-width: 508px;
 }
 
 .offer-banner__name {
@@ -125,7 +124,6 @@ body {
 
   .offer-banner__title {
     margin-bottom: 12px;
-    max-width: 200px;
     font-size: 16px;
     font-weight: 400;
     color: #999;
@@ -209,7 +207,6 @@ body {
     margin-bottom: 43px;
     font-size: 50px;
     line-height: 137%;
-    max-width: 520px;
   }
 
   .sale-banner {
@@ -238,7 +235,6 @@ body {
 
   .sale-banner__text {
     letter-spacing: normal;
-    max-width: 100%;
   }
 
   .offer-banner {
@@ -285,7 +281,6 @@ body {
   .sale-banner__text {
     margin-bottom: 155px;
     font-size: 20px;
-    max-width: 220px;
   }
 
   .sale-banner__btn {
@@ -305,7 +300,6 @@ body {
   .offer-banner__title {
     margin-bottom: 144px;
     font-size: 16px;
-    max-width: 187px;
   }
 
   .offer-banner__name {
