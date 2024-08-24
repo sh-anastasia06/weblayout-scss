@@ -209,8 +209,16 @@
   display: flex;
 }
 
+.crumbs__item:not(:last-of-type) {
+  position: relative;
+  padding-right: 15px;
+}
+
 .crumbs__item:not(:last-of-type)::after {
   content: '/';
+  position: absolute;
+  top: 0;
+  right: 0px;
   padding: 0 5px;
   font-size: 14px;
   font-weight: 400;
