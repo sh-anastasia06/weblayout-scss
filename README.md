@@ -4,27 +4,43 @@
 
 ## 📁 Структура проекта
 ```
-weblayout-scss/
+src/
 ├── scss/ # Исходные SCSS-файлы
-│ ├── base/
-│ │ ├── _fonts.scss
-│ │ └── _reset.scss
+│ ├── vendor/
+│ │ └── _normalize.scss
 │ ├── components/
-│ │ ├── _card.scss
-│ │ └── _button.scss
-│ ├── layout/
-│ │ ├── _header.scss
+│ │ ├── _cards.scss
+│ │ ├── _catalogue.scss
 │ │ ├── _footer.scss
-│ │ └── _navigation.scss
-│ ├── pages/
-│ │ └── _home.scss
+│ │ ├── _form.scss
+│ │ ├── _header.scss
+│ │ ├── _product.scss
+│ │ └── _ui.scss
+│ ├── mixins/
+│ │ ├── _breakpoint.scss
+│ │ ├── _burger.scss
+│ │ ├── _checkbox.scss
+│ │ ├── _disable-mob-hover.scss
+│ │ ├── _flex.scss
+│ │ ├── _font-face.scss
+│ │ ├── _layout.scss
+│ │ ├── _mini.scss
+│ │ └── _tabs.scss
+│ ├── _fonts.scss
+│ ├── _mixixns.scss
+│ ├── _settings.scss
+│ ├── _vars.scss
+│ ├── vendor.scss
 │ └── main.scss # Основной файл для импорта всех стилей
-├── css/ # Скомпилированные CSS-файлы
 ├── js/ # Скрипты (например, burger-menu.js)
-├── images/ # Изображения для проекта
+├── imag/ # Изображения для проекта
+├── partials/ # Разметка компонентов
+├── resourses/
+│ ├── fonts/ # Шрифты
+│ └── favicon.svg
 ├── index.html # Главная страница
-├── .gitignore
-└── README.md
+├── catalogue.html
+└── product.html
 ```
 ## 🛠 Технологии
 
